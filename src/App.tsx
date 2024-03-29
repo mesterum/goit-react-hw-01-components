@@ -3,6 +3,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Profile from './components/Profile'
 import user from './assets/user.json'
+import Statistics from './components/Statistics'
+import data from './assets/data.json'
 
 function App() {
   return <>
@@ -16,6 +18,7 @@ function App() {
     </div>
     <h1>Vite + React</h1>
     <Profile {...user} />
+    <Statistics title="Upload stats" stats={data} />
   </>
 }
 
