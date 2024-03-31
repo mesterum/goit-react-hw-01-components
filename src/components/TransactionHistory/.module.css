@@ -1,0 +1,29 @@
+.transaction-history {
+  border: solid #ececec 1px;
+  border-collapse: collapse;
+  & td,
+  & th:nth-child(n + 2) {
+    padding: 1em 2em;
+    border-left: solid #ececec 1.5px;
+  }
+  & thead {
+    background-color: #00bcd5;
+    color: white;
+    text-transform: uppercase;
+  }
+  & tbody {
+    background-color: white;
+    color: black;
+    > tr:nth-child(even) {
+      background-color: #ecf1f3;
+    }
+    & td:nth-child(1) {
+      text-transform: capitalize;
+      text-align: left;
+      border-left-width: 0;
+    }
+    & td:nth-child(2) {
+      text-align: right;
+    }
+  }
+}
