@@ -17,7 +17,7 @@ export default function Statistics(props: {
 
       <ul className={style.statList}>
         {stats.map(stat => (
-          <li key={stat.id} className={style.item} style={{ backgroundColor: `hsl(${stat.percentage * 3.60}, 70%, 20%)` }}>
+          <li key={stat.id} className={style.item} style={{ backgroundColor: `hsl(${stat.percentage * 3.60}, 70%, 35%)` }}>
             <span className={style.label}>{stat.label}</span>
             <span className={style.percentage}>{stat.percentage}%</span>
           </li>

@@ -5,6 +5,8 @@ import Profile from './components/Profile'
 import user from './assets/user.json'
 import Statistics from './components/Statistics'
 import data from './assets/data.json'
+import FriendList from './components/FriendList'
+import friends from './assets/friends.json';
 
 function App() {
   return <>
@@ -19,6 +21,8 @@ function App() {
     <h1>Vite + React</h1>
     <Profile {...user} />
     <Statistics title="Upload stats" stats={data} />
+    <Statistics stats={data} />
+    <FriendList friends={friends} />
   </>
 }
 
